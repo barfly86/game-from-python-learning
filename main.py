@@ -22,3 +22,4 @@ while guess != correct_number:
                 "Wrong, try lower. enter the number : "))
 
 print(f"Great! The number is {correct_number}. It took you {guess_count} tries")
+time.sleep(10)
