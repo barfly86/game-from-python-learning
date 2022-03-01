@@ -1,11 +1,11 @@
 import random
 import time
 
-print("Cześć! Zgadnji ukrytą liczbę pomiędzy 1 a 100")
+print("Hi! Please choose number between 1 and 100")
 
 time.sleep(1)
 
-guess = int(input("podaj liczbę: "))
+guess = int(input("enter the number: "))
 correct_number = random.randint(1, 100)
 time.sleep(1)
 
@@ -15,10 +15,10 @@ while guess != correct_number:
     guess_count += 1
     if guess < correct_number:
         guess = int(
-            input("zła odpowiedź, podana liczba jest większa. podaj liczbę: "))
+            input("Wrong, try higher. enter the number : "))
     else:
         guess = int(
             input(
-                "zła odpowiedź, podana liczba jest mniejsza. podaj liczbę: "))
+                "Wrong, try lower. enter the number : "))
 
-print(f"BRAWO! ukryta liczba to {correct_number}.")
+print(f"Great! The number is {correct_number}. It took you {guess_count} tries")
